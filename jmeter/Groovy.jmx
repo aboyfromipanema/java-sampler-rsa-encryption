@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="publicKey" elementType="Argument">
+            <stringProp name="Argument.name">publicKey</stringProp>
+            <stringProp name="Argument.value">${__P(publicKey,MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwhbgydR2iEP9HhsHAopu4TRbcGGlgAqPi2Z8ensRFkk+P4TSxoi3Zos29asxtKJUOIkBRR3s2XVMwlUO95dqucuGTpHxp6vru5SG/uIqKHmLZb1t5F1ljbw/q/tX6T/DyxTCjEIl+T9n/lWlYdu+IT+pZgKtBAyuut6X37RTaeEgG8h9IFsZq9j1f2diHIMFW8FmCO/nzBI08mKS49zdktWtrDeOheXvy7otegB9vO9Lxd7OrBH3qCJ8K+skIqv5ju4SuLDEPSYDfGH0glhswLg5awWnVTt9ljCiS38CTuyLiJA9P9kSNJTCfL+r6kqS9Uy7vXnCpzfUIFgrJpfluwIDAQAB)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="privateKey" elementType="Argument">
+            <stringProp name="Argument.name">privateKey</stringProp>
+            <stringProp name="Argument.value">${__P(privateKey,MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDCFuDJ1HaIQ/0eGwcCim7hNFtwYaWACo+LZnx6exEWST4/hNLGiLdmizb1qzG0olQ4iQFFHezZdUzCVQ73l2q5y4ZOkfGnq+u7lIb+4iooeYtlvW3kXWWNvD+r+1fpP8PLFMKMQiX5P2f+VaVh274hP6lmAq0EDK663pfftFNp4SAbyH0gWxmr2PV/Z2IcgwVbwWYI7+fMEjTyYpLj3N2S1a2sN46F5e/Lui16AH2870vF3s6sEfeoInwr6yQiq/mO7hK4sMQ9JgN8YfSCWGzAuDlrBadVO32WMKJLfwJO7IuIkD0/2RI0lMJ8v6vqSpL1TLu9ecKnN9QgWCsml+W7AgMBAAECggEBAI55FNGTcN9eaTPsSx0GWZZfRLAePcrb9bsypDWUmVpusY8XBVJPkbFoiBOWc4pRjtlhWNlPukl23b3Zin8dW26/g/uxDl8yyHyN7vqzMpc7gaRRhZWZKa79fQ/WFRZXhHZS6uzisdVhQglk/V30XIEzpjoHxNGwLaNnOr0wNfsFyoT+2l+sIQYp7t5yirnGujHh7XE1H047guSj9lF5K6hgY4ybIMRe1VL+hBVxbJsio4XWZrPDTNfVHScSolRN+7nG76RtPfYzHAnKmzU6lOB6RThkpGZQP4U6A8e7JLsfFb3Xi7eA+0mca04OL1q8v4FClyUPShL9HtJa2s6V82ECgYEA8sUxdW0K0OHwBbq6OuNUN98KHVeGRs9zFK0FF/FNVkfFUTAjUBKK02G17CWbelT0Sj1JpZ2ECkForb8tk4a3ZUQ/IDRu5QOLJnyf9xKQk/a/d4TWruD3WrLsTAwyfJB35CSkZB58j6vV6FnHGOEZSUdy8PLjaUZIw7paokuyVocCgYEAzKqNwMOP93dT9EzPgG3QYXBkGqLMEkAEgKwCeCFT1o1N0A8wlr7LK3l4f/kSb6kz/oedVMQAi9Vba+S6R4q72niaa60/lOum5iAuxkl1E+zHJz8KUBISrjFwsL5g9DmB/siNT6yLC9qh1c1wK3S/UEnG2JCdNSj1GXgCnZnH0C0CgYEA32wvmlwiKh7lIMC6h1uTtF+mFV7pit18kbiyCVjfzdn7dD6TISwPa35vSMdLkYgB0xkYYDzYuf98cPqS3USMH7xxRBg9PrLGK0NijKYfPK1HhJ1SXltYCbbE1TAcfpsOW36FdEbCaA7CrDWDkBgJh3EkDS/brpUqfkdRBjAYDp0CgYATiw2yJHpw1PItV9BQoSvOwh6s9HKsI3TKnKI3umb5C9EsVub63gkkg5rgDXaXNv8CBQ0e9QBgWeU67kJjZnn9qJqGQaram436V4Rf5s/JMUjrFHf1oWQrQglStzsm1v70x03HF+DHJv9hHRbi72j9T64vK8/3LYwJ/I2zYuXTmQKBgCW52K5acnBoJyzrLzewTbHY5a336YWsJzcEfk2oto9EAP5QuTyXzt8lpM1zYUdI9od0qqPV0rbzSgxrnKBbVdFvsqx6HdIsW1iw1J8pAeUImHeGVBY+Eh0s+MoTC9zJNCQyoDXno5FTZ26QDZ/HXR8boFuc3ONjpf+W4UGpzvsW)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="textToEncrypt" elementType="Argument">
+            <stringProp name="Argument.name">textToEncrypt</stringProp>
+            <stringProp name="Argument.value">${__P(textToEncrypt,BlazeMeter)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">${__P(users,5)}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${__P(rampup,60)}</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">${__P(duration,120)}</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Groovy - Encrypt" enabled="true">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters">${textToEncrypt}</stringProp>
+          <stringProp name="script">import javax.crypto.Cipher;
+import javax.crypto.KeyGenerator;
+import javax.crypto.SecretKey;
+import java.security.KeyFactory;
+import java.security.PublicKey;
+import java.security.spec.X509EncodedKeySpec;
+import java.util.Base64;
+
+KeyGenerator keyGen = KeyGenerator.getInstance(&quot;AES&quot;);
+keyGen.init(256);
+SecretKey secretKey = keyGen.generateKey();
+
+Cipher aesCipher = Cipher.getInstance(&quot;AES&quot;);
+aesCipher.init(Cipher.ENCRYPT_MODE, secretKey);
+byte[] encryptedData = aesCipher.doFinal(Parameters.getBytes());
+
+X509EncodedKeySpec x509EncodedKeySpec = new X509EncodedKeySpec(Base64.getDecoder().decode(vars.get(&quot;publicKey&quot;)));
+KeyFactory keyFactory = KeyFactory.getInstance(&quot;RSA&quot;);
+PublicKey publicKey = keyFactory.generatePublic(x509EncodedKeySpec);
+
+Cipher cipher = Cipher.getInstance(&quot;RSA/ECB/PKCS1Padding&quot;);
+cipher.init(Cipher.PUBLIC_KEY, publicKey);
+byte[] encryptedKey = cipher.doFinal(secretKey.getEncoded());
+
+
+String key = Base64.getEncoder().encodeToString(encryptedKey);
+String data = Base64.getEncoder().encodeToString(encryptedData);
+vars.put(&quot;encryptedKey&quot;, key);
+vars.put(&quot;encryptedData&quot;, data);
+
+SampleResult.setResponseData(&quot;Encrypted key: &quot; + key + &quot;\nEncrypted data: &quot; + data)
+</stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Groovy - Decrypt" enabled="true">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">import javax.crypto.Cipher;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.SecretKeySpec;
+import java.security.KeyFactory;
+import java.security.PrivateKey;
+import java.security.spec.PKCS8EncodedKeySpec;
+import java.util.Base64;
+
+byte[] encryptedKey = Base64.getDecoder().decode(vars.get(&quot;encryptedKey&quot;));
+byte[] encryptedData = Base64.getDecoder().decode(vars.get(&quot;encryptedData&quot;));
+
+PKCS8EncodedKeySpec pkcs8EncodedKeySpec = new PKCS8EncodedKeySpec(Base64.getDecoder().decode(vars.get(&quot;privateKey&quot;)));
+KeyFactory keyFactory = KeyFactory.getInstance(&quot;RSA&quot;);
+PrivateKey privateKey = keyFactory.generatePrivate(pkcs8EncodedKeySpec);
+
+Cipher cipher = Cipher.getInstance(&quot;RSA/ECB/PKCS1Padding&quot;);
+cipher.init(Cipher.PRIVATE_KEY, privateKey);
+byte[] decryptedKey = cipher.doFinal(encryptedKey);
+
+SecretKey originalKey = new SecretKeySpec(decryptedKey, 0, decryptedKey.length, &quot;AES&quot;);
+Cipher aesCipher = Cipher.getInstance(&quot;AES&quot;);
+aesCipher.init(Cipher.DECRYPT_MODE, originalKey);
+byte[] decryptedData = aesCipher.doFinal(encryptedData);
+vars.put(&quot;decryptedData&quot;, new String(decryptedData));
+
+SampleResult.setResponseData(&quot;Decrypted data: &quot; + vars.get(&quot;decryptedData&quot;));</stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
